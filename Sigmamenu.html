@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Website</title>
+    <style>
+        /* ตั้งค่าหน้าตาเว็บไซต์ (CSS) */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 24px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            max-width: 400px;
+            width: 90%;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #38bdf8;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+        }
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+            color: #38bdf8;
+        }
+        p {
+            color: #94a3b8;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: block;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+        }
+        .btn:hover {
+            background: #0ea5e9;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-img">🚀</div>
+        
+        <h1>ยินดีต้อนรับสู่เว็บของฉัน</h1>
+        <p>นี่คือเว็บไซต์แรกที่ฉันสร้างขึ้นมาด้วยตัวเอง ยินดีที่ได้รู้จักทุกคนครับ!</p>
+        
+        <a href="#" class="btn" onclick="sayHello()">คลิกทักทายตรงนี้</a>
+    </div>
+
+    <script>
+        // ระบบโต้ตอบ (JavaScript)
+        function sayHello() {
+            alert("ยินดีต้อนรับเข้าสู่เว็บไซต์ของฉันอย่างเป็นทางการครับ! 🎉");
+        }
+    </script>
+</body>
+</html>
